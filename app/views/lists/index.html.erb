@@ -1,0 +1,13 @@
+<%# A user can see all the lists %>
+<h1> Movie lists </h1>
+<ol>
+<% @lists.each do |list| %>
+<li><%= link_to list.name.capitalize, list_path(list) %></li>
+<% end %>
+</ol>
+
+
+<button><%= link_to "New List", new_list_path %></button>
+
+<%# # A user can see the details of a given list and its name (see list/id) %>
+<%# <%# A user can create a new list (see create button on index page) %>

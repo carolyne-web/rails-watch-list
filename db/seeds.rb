@@ -31,6 +31,7 @@ puts "Creating lists..."
   )
 end
 
+
 puts "Finished!"
 puts "Made #{Movie.count} movies"
 puts "Made #{List.count} lists"

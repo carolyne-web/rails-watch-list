@@ -1,2 +1,7 @@
 <%# A user can see all the lists %>
 <h1> Lists </h1>
+<ol>
+<% @lists.each do |list| %>
+<li><%= list.capitalize %></li>
+<% end %>
+</ol>
